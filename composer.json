@@ -1,0 +1,46 @@
+{
+    "name": "gttechgr/mcp",
+    "description": "Laravel AI tools that measure a site through the GT Tech MCP server.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "mcp", "seo", "gttech"],
+    "homepage": "https://github.com/gttechgr/mcp",
+    "support": {
+        "issues": "https://github.com/gttechgr/mcp/issues",
+        "source": "https://github.com/gttechgr/mcp"
+    },
+    "authors": [
+        {
+            "name": "GT Tech",
+            "email": "info@gttech.gr"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "laravel/ai": "^1.2",
+        "laravel/mcp": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.9|^11.0",
+        "phpunit/phpunit": "^11.5|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gttechgr\\Mcp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gttechgr\\Mcp\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gttechgr\\Mcp\\GttechServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

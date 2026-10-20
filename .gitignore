@@ -1,0 +1,7 @@
+*.log
+composer.lock
+.phpunit.result.cache
+/.idea
+/.phpunit.cache
+/.vscode
+/vendor
