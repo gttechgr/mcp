@@ -13,6 +13,7 @@ class GttechServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(dirname(__DIR__).'/config/gttech.php', 'gttech');
+        $this->app->singleton(HostSession::class);
     }
 
     public function boot(): void
